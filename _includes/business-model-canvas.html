@@ -1,0 +1,82 @@
+<table class="table table-bordered">
+  <tbody>
+    <tr>
+      <td colspan="2" rowspan="2">
+        <h5>Problem</h5>
+        <div>
+          {% for problem in page.problems %}
+            <a>{{ problem | textilize }}</a>
+          {% endfor %}
+        </div>
+      </td>
+      <td colspan="2">
+        <h5>Solution</h5>
+        <div>
+          {% for solution in page.solutions %}
+            <a>{{ solution | textilize }}</a>
+          {% endfor %}
+        </div>
+      </td>
+      <td colspan="2" rowspan="2">
+        <h5>Unique value</h5>
+        <div>
+          {% for unique-value in page.unique-values %}
+            <a>{{ unique-value | textilize }}</a>
+          {% endfor %}
+        </div>
+      </td>
+      <td colspan="2">
+        <h5>Unfair advantage</h5>
+        <div>
+          {% for unfair-advantage in page.unfair-advantages %}
+            <a>{{ unfair-advantage | textilize }}</a>
+          {% endfor %}
+        </div>
+      </td>
+      <td colspan="2" rowspan="2">
+        <h5>Customer</h5>
+        <div>
+          {% for customer in page.customers %}
+            <a>{{ customer | textilize }}</a>
+          {% endfor %}
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <h5>Key metric</h5>
+        <div>
+          {% for key-metric in page.key-metrics %}
+            <a>{{ key-metric | textilize }}</a>
+          {% endfor %}
+        </div>
+      </td>
+      <td colspan="2">
+        <h5>Channels</h5>
+        <div>
+          {% for channel in page.channels %}
+            <a>{{ channel | textilize }}</a>
+          {% endfor %}
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <h5>Cost structure</h5>
+        <div>
+          {% for cost-structure in page.cost-structures %}
+            <a>{{ cost-structure | textilize }}</a>
+          {% endfor %}
+        </div>
+      </td>
+      <td colspan="5">
+        <h5>Revenue stream</h5>
+        <div>
+          {% for revenue-stream in page.revenue-streams %}
+            <a>{{ revenue-stream | textilize }}</a>
+          {% endfor %}
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>

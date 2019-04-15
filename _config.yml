@@ -1,0 +1,14 @@
+title: MMID2 Governance
+description: >
+  Long-term foundations for cross-industry information sharing
+author: Anders Dalén
+email: anders.dalen@ri.se
+
+baseurl: /mmid
+collections:
+  governance:
+    output: true
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
